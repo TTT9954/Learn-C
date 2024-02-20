@@ -19,16 +19,7 @@ void send_data(uint8_t data)
 
 int main()
 {
-    uint8_t a = 0b11001011; // result: 0xE8
-    int temp = 0;
-    uint8_t output = 0;
-    for(int i = 0; i < 8; i++)
-    {
-        temp = (a >> i) & 1;
-        output |= temp << i;
-        printf("%d\n",temp);
-    }
-            printf("%d\n",output);
+    uint16_t a = 0;
 
 
     return 0;
