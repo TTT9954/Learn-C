@@ -20,7 +20,7 @@ void send_data(uint8_t data)
 int main()
 {
     uint16_t a = 0;
-
+    uint16_t b = 0;
 
     return 0;
 }
