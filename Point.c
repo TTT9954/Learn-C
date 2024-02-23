@@ -3,10 +3,14 @@
 
 Point Point_initialize(double x, double y)
 {
-    Point aPoint;
-    aPoint.x = x;
-    aPoint.y = y;
+    Point aPoint = {x, y};
     return aPoint;
+}
+
+void Point_offset(Point *self, const Point *offset_by)
+{
+    self->x = offset_by->x;
+    self->y = offset_by->y;
 }
 
 Point add(Point p1, Point p2)
@@ -18,5 +22,5 @@ Point add(Point p1, Point p2)
 
 void Print(const Point *self)
 {
-    printf("%f %f", self->x, self->y);
+    printf("%f %f\n", self->x, self->y);
 }

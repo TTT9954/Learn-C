@@ -10,6 +10,8 @@ typedef struct Point
 /* Initialize*/
 Point Point_initialize(double x, double y);
 
+void Point_offset(Point *self, const Point *offset_by);
+
 /* add 2 point*/
 Point add(Point p1, Point p2);
 
