@@ -85,7 +85,7 @@ int main()
     gets(s);
     fflush(stdin);
     printf("%s\n", s);
-    count_word(s);
+    invert(s);
     //Add(s,'z',2);
     //hoa(s);
     //invert(s);
