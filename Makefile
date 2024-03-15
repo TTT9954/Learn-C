@@ -1,2 +1,2 @@
 aaa:
-	gcc -o 123123 123123.c Point.c
+	gcc -o Udemy Udemy.c
