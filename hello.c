@@ -156,10 +156,25 @@ int i = 1;
 bool state1 = true;
 int *a=NULL;
 
+void increase(int count)
+{
+    if(count < 100)
+    {
+        (count)++;
+        printf("Count: %d ",count);
+    }
+}
+
+void display(int count)
+{
+    printf("Count: %d", count);
+}
 int main() { 
     int n;
-
-    do
+    int count = 0;
+    increase(count);
+    display(count);
+    /* do
     {
        scanf("%d",&n); 
     } while (n<1);
@@ -167,7 +182,7 @@ int main() {
     Input(a,&n);
     printf("\nArray: \n");
     Output(a,n);
-    sum_max(a,&n);
+    sum_max(a,&n); */
     return 0;
 
 }
