@@ -20,7 +20,7 @@ uint8_t Delete_record(uint8_t rollnum, STUDENT_RECORD *record, uint8_t max_recor
 
 uint8_t const max_record = 10;
 uint8_t continue_app = 1;
-
+uint8_t total = 0;
 int main()
 {
     while(continue_app)
@@ -53,7 +53,7 @@ void display_menu()
             break;
         case 2:
             printf("\n***** Add new student *****\n");
-
+            printf("Total Students are added: %d\\10\n", total);
             printf("Enter roll number to add: ");
             scanf("%u", &rollnum);
             Add_new_record(rollnum, students, max_record);
@@ -115,6 +115,7 @@ void Add_new_record(uint8_t rollnum, STUDENT_RECORD *record, uint8_t max_record)
             exist = Check_exist(rollnum, students, max_record);
             if(!exist)
             {
+                total++;
                 record[i].RollNumber = rollnum;
                 printf("Enter Semester: ");
                 scanf("%u", &record[i].Semester);
@@ -148,6 +149,7 @@ uint8_t Delete_record(uint8_t rollnum, STUDENT_RECORD *record, uint8_t max_recor
         {
             is_deleted = 1;
             index_deleted = i;
+            
         }
     }
     if(is_deleted == 0) 
@@ -163,6 +165,7 @@ uint8_t Delete_record(uint8_t rollnum, STUDENT_RECORD *record, uint8_t max_recor
             record[i] = record[i+1];
         }
         max_record--;
+        total--;
     }
     /* for(uint8_t i = 0; i < max_record; i++)
     {
