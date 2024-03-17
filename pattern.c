@@ -8,13 +8,14 @@ void pattern_5(int n);
 void pattern_6(int n);
 void pattern_7(int n);
 void pattern_8(int n);
+void pattern_9(int n);
 
 int main()
 {
     int n;
     printf("Enter number of rows: ");
     scanf("%d", &n);
-    pattern_8(n);
+    pattern_2(n);
     return 0;
 }
 
@@ -32,12 +33,16 @@ void pattern_1(int n)
 
 void pattern_2(int n)
 {
+    int number = 1;
+    int alphabet = 65;
     for(int row = 1; row <= n; row++)
     {
         for(int col = 1; col <= row; col++)
         {
-            printf("* ");
+            //printf("* ");
+            printf("%c ", alphabet);
         }
+        alphabet++;
         printf("\n");
     }
 }
@@ -74,7 +79,7 @@ void pattern_5(int n)
         int totalCol = (row > n ? 2*n-row : row);
         for(int col = 1; col <= totalCol; col++)
         {
-            printf("* ");
+            printf("%d", col);
         }
         printf("\n");
         /* if(row > n)
@@ -132,9 +137,25 @@ void pattern_8(int n)
         {
             // if(col <= n-row || col >= n+row) printf(" ");
             //else printf("*"); 
-            if(col > n-row && col < n+row) printf("* ");
+            if(col > n-row && col < n+row) printf("%d ",col);
             else printf("  ");
         }
+        printf("\n");
+    }
+}
+
+void pattern_9(int n)
+{
+    int k;
+    for(int row = 1; row <= n; row++, k=0)
+    {
+        /* for(int col = 1; col <= 2*n-1; col++)
+        {
+            //if(col <= row - 1 || col > 2*n-row) printf(" ");
+            //else printf("*");
+            if(col > row-1 && col <= 2*n-row) printf("*");
+            else printf(" ");
+        } */
         printf("\n");
     }
 }
