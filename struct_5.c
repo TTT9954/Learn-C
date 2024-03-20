@@ -139,6 +139,23 @@ void Add_new_record(uint8_t rollnum, STUDENT_RECORD *record, uint8_t max_record)
 
 }
 
+uint8_t Sort_rollnum_A_Z(STUDENT_RECORD *record, uint8_t max_record)
+{
+    uint8_t temp;
+    for(uint8_t i = 0; i < max_record; i++)
+    {
+        for(uint8_t j = i+1; i < max_record; j++)
+        {
+            if(record[i].RollNumber > record[j].RollNumber)
+            {
+                temp = record[i].RollNumber;
+                record[i].RollNumber =  record[j].RollNumber;
+                record[j].RollNumber = temp;
+            }
+        }
+    }
+}
+
 uint8_t Delete_record(uint8_t rollnum, STUDENT_RECORD *record, uint8_t max_record)
 {
     uint8_t is_deleted = 0;

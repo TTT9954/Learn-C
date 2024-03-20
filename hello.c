@@ -23,6 +23,7 @@ void Output(int *a, int n)
       printf("%d ",*a);
       a++;   
    }
+   printf("\n");
 }
 
 void swap (int *x, int *y)
@@ -46,11 +47,11 @@ void Bubble_sort(int *a, int *n)
 {
     for(int i=0; i<*n; i++)
     {
-        for(int j=i+1; j<*n; j++)
+        for(int j=0; j<*n; j++)
         { 
-            if(a[i]>a[j])
+            if(a[j]>a[j+1])
             {
-                swap(&a[i],&a[j]);
+                swap(&a[j],&a[j+1]);
             }   
         }
     }
@@ -172,9 +173,7 @@ void display(int count)
 int main() { 
     int n;
     int count = 0;
-    increase(count);
-    display(count);
-    /* do
+    do
     {
        scanf("%d",&n); 
     } while (n<1);
@@ -182,7 +181,8 @@ int main() {
     Input(a,&n);
     printf("\nArray: \n");
     Output(a,n);
-    sum_max(a,&n); */
+    Bubble_sort(a,&n);
+    Output(a,n);
     return 0;
 
 }

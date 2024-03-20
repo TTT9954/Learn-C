@@ -9,13 +9,14 @@ void pattern_6(int n);
 void pattern_7(int n);
 void pattern_8(int n);
 void pattern_9(int n);
+void pattern_10();
 
 int main()
 {
     int n;
-    printf("Enter number of rows: ");
-    scanf("%d", &n);
-    pattern_2(n);
+    // printf("Enter number of rows: ");
+    // scanf("%d", &n);
+    pattern_10();
     return 0;
 }
 
@@ -158,4 +159,65 @@ void pattern_9(int n)
         } */
         printf("\n");
     }
+}
+
+void pattern_10()
+{
+    for(int i = 1; i<=5; i++)
+    {
+        for(int j = 1; j <= 23; j++)
+        {
+            if((j == 11) || (i == 1 && (j >= 9 && j <= 13)) || (i == 5 && (j >= 9 && j <= 13)))
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+    printf("\n");
+    for(int i = 1; i<= 5; i++)
+    {
+        for(int j = 1; j <= 23; j++)
+        {
+            if(j == 1 || (i == 5 && (j>=1 && j<=5)) 
+               || (i == 1 && (j >= 7 && j <= 11)) || (i == 5 && (j >= 7 && j <= 11)) 
+               || ((i >= 2  && i <= 4) && (j == 7 || j == 11))
+               || ((i >= 1 && i <= 3) && (j == 13 || j == 17)) || (i == 4 && (j == 14 || j == 16) || (i==5 && j == 15))
+               || ( j == 19 || ((i == 1 || i == 3 || i == 5) && (j >= 19 && j <= 23))))
+            {
+                printf("*");
+            }
+            
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+    printf("\n");
+
+    for(int i = 1; i<=5; i++)
+    {
+        for(int j = 1; j <= 23; j++)
+        {
+            if(((i == 1 && (j == 3 || j == 7)) || (i == 2 && (j == 4 || j == 6)) || ((i >= 3 && i <= 5) && j == 5))
+                || ((i == 1 || i == 5) && (j >= 9 && j <= 13)) || ((i >= 2 && i <= 4) && (j == 9 || j == 13))
+                || ((j == 15 || j == 19) || (i == 5) && (j >= 15 && j<=19)))
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+    printf("\n");
+
 }
