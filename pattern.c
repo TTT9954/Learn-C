@@ -11,12 +11,33 @@ void pattern_8(int n);
 void pattern_9(int n);
 void pattern_10();
 
+unsigned char row = 0x70; 
+
 int main()
 {
-    int n;
+    int n = 0;
+    int i = 0;
+    
     // printf("Enter number of rows: ");
     // scanf("%d", &n);
-    pattern_10();
+    //pattern_10();
+    unsigned char a = row;
+
+    while(i < 100)
+    {   
+        n = 0;
+        while(n < 12)
+        {
+            printf("a: %x ", row);
+            n++;
+        }
+        printf("\n");
+        row = (row << 1) + 1;
+        a = row;
+        if(a == 0x38) a = 0x70;
+        i++;
+    }
+    
     return 0;
 }
 

@@ -79,6 +79,39 @@ void invert(char s[30])
     }
     printf("%s",s);
 }
+
+char *reverse(char s[])
+{
+    char c;
+    for(int i = 0, j = strlen(s)-1; i <= j; i++, j--)
+    {
+        c = *(s+i);
+        *(s+i) = *(s+j);
+        *(s+j) = c;
+    }
+    return s;
+}
+
+char *concat(char s1[], char s2[])
+{
+    for(int i = 0; i < strlen(s2); i++)
+    {
+        int len1 = strlen(s1);
+        s1[len1++] = s2[i];
+    }
+
+    return s1;
+}
+
+int strcmp1(char s1[], char s2[])
+{
+    int sum = 0;
+    while(*s1 != '\0' || *s2 != '\0')
+    {
+        if(*s1++ != *s2++) return 1; 
+    }
+    return 0;
+}
 int main()
 {
     char s[30];

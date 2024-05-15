@@ -1,2 +1,1 @@
-
-            (contacts+(*count))
+0xE1
