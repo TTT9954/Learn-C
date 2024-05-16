@@ -1,2 +1,3 @@
-aaa:
-	gcc -o Udemy Udemy.c
+all:
+	gcc src/Point.c src/String.c main.c -o main
+	.\main

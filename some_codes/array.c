@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <string.h>
+#include "string1.h"
+
 #define LENGTH   10
 
 int get_MAX(const int a)
@@ -71,6 +73,23 @@ char *delete_character(char s[], char c)
     return s;
 }
 
+char *delete_word(char *s, char *word)
+{
+    int delete_index;
+    int temp_index;
+    char *temp_word;
+    int length = strlen(s);
+    for(int i = 0; i < length; i++)
+    {
+        temp_word[i] = s[i];
+        if(s[i] == ' ')
+        {
+            i+= 1;
+        }
+    }
+    return s;
+}
+
 int MaxMin_array(int a[], char s[])
 {
     int max = 0;
@@ -96,21 +115,44 @@ int MaxMin_array(int a[], char s[])
     }
 
     return -1;
- 
+}
+
+
+
+void print_string(char s[])
+{
+    while(1)
+    {
+        if(*s == '\0')
+        {
+            printf("%c", ' ');
+            break;
+        }
+        printf("%c", *s++);
+    }
+}
+
+void concat_string(char destination[], const char *soure)
+{
+    int length1 = strlen(destination);
+    int length2 = strlen(soure);
+    for(int i = 0; soure[i] != '\0'; i++)
+    {
+        destination[length1++] = soure[i];
+    }
+    destination[length1] = '\0';
 }
 
 int main()
 {
     int *arr = NULL;
-    int max = 0;
-    char *str;
-    //arr = Input();
-    //Output(arr);
-    char s[] = {0};
-    char c = 'n';
-    gets(s);
-    fflush(stdin);
 
-    printf("%s", delete_character(s,'T'));
+    char a[] = "Hello";
+    char b[] = "Error";
+
+    char str[] = {0};
+
+    print_string(a);
+
     return 0;
 }

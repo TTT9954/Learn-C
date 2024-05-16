@@ -1,6 +1,4 @@
-#include <stdio.h>
-#include <conio.h>
-#include <string.h>
+#include "../inc/String.h"
 
 int count_char(char *s)
 {
@@ -110,17 +108,5 @@ int strcmp1(char s1[], char s2[])
     {
         if(*s1++ != *s2++) return 1; 
     }
-    return 0;
-}
-int main()
-{
-    char s[30];
-    gets(s);
-    fflush(stdin);
-    printf("%s\n", s);
-    invert(s);
-    //Add(s,'z',2);
-    //hoa(s);
-    //invert(s);
     return 0;
 }
