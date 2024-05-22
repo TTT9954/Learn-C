@@ -1,3 +1,2 @@
 all:
-	gcc src/Point.c src/String.c main.c -o main
-	.\main
+	gcc src/Some_exercises.c src/Array.c main.c -o main

@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <string.h>
-#include "string1.h"
 
 #define LENGTH   10
 

@@ -1,16 +1,15 @@
 #ifndef STRING1_H
 #define STRING1_H
 
-#include <string.h>
-#include <stdio.h>
+#include "main.h"
 
 int count_char(char *s);
 
-void count_word(char s[30]);
+int count_word(char s[30]);
 
 void Delete(char s[30], int vitri);
 
-void Add(char s[30], char k, int vitri);
+char *Add_char(char s[30], char k, int pos);
 
 void hoa_thuong(char s[30]);
 

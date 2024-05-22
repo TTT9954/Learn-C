@@ -14,7 +14,7 @@ int count_char(char *s)
     return count;
 }
 
-void count_word(char s[30])
+int count_word(char s[30])
 {
     int count = 0;
     if(s[0]!= ' ')
@@ -29,7 +29,7 @@ void count_word(char s[30])
         }
     }
     
-    printf("A number of words in the string: %d ", count);
+    return count;
 }
 
 void Delete(char s[30], int vitri)
@@ -43,16 +43,18 @@ void Delete(char s[30], int vitri)
     printf("%s\n", s);
 }
 
-void Add(char s[30], char k, int vitri)
+char *Add_char(char s[], char k, int pos)
 {
-    int length=strlen(s);
+    int length = strlen(s);
+    char temp_c = 0;
     length++;
-    for(int i=length-1; i>=vitri; i--)
+    for(int i=pos; i < length; i)
     {
-        s[i+1]=s[i];
+        s[length] = s[length-1];
+        length--;
     }
-    s[vitri]=k;
-    printf("%s\n", s);
+    s[pos]=k;
+    return s;
 }
 
 void hoa_thuong(char s[30])
