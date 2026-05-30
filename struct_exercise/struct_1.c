@@ -27,7 +27,6 @@ void addContact(struct Contact contacts[], int *count)
     char phone[50];
     if (*count < 100) 
     { 
-       
         total += *count;
         printf("Total: %d\n", total); 
         printf("Enter name: "); 
@@ -68,54 +67,15 @@ void searchContact(const struct Contact contacts[], int count, const char *name)
     if (!found) { printf("Contact not found.\n"); } 
 } 
 
-void display(const struct Contact contacts[], int *count)
-{
-    int i = 0;
-    while(i < *count)
-    {
-        printf("Name: %s\n", contacts[i].name);
-        printf("Phone number: %s\n", contacts[i].phone);
-        i++;
-    }
-}
+// void display(const struct Contact contacts[], int *count)
+// {
+//     int i = 0;
+//     while(i < *count)
+//     {
+//         printf("Name: %s\n", contacts[i].name);
+//         printf("Phone number: %s\n", contacts[i].phone);
+//         i++;
+//     }
+// }
 
-int main() 
-{ 
-    struct Contact contacts[100]; // Array to sto 
-    int count = 0; // Number of contacts stored 
-    int choice;
-    char searchName[50]; 
-    
-    int exist = 0;
-    do{ 
-        printf("count: %d\n", count);
-        printf("\nPhonebook Menu:\n"); 
-        printf("1. Add Contact\n"); 
-        printf("2. Search Contact\n"); 
-        printf("3. Display Contact\n");
-        printf("4. Exit\n"); 
-        printf("Enter your choice: "); 
-        scanf("%d", &choice); 
-        switch(choice)
-        {
-            case 1: 
-                addContact(contacts, &count); 
-                break; 
-            case 2: 
-                printf("Enter name to search: "); 
-                scanf("%s", searchName); 
-                searchContact(contacts, count, searchName); 
-                break; 
-            case 3:
-                display(contacts, &count); 
-                break;       
-            case 4: 
-                printf("Exiting Phonebook.\n"); 
-                break; 
-            default: 
-                printf("Invalid choice.\n"); 
-        }
-    } while (choice != 4); 
-    return 0; 
-} 
      

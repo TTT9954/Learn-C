@@ -3,12 +3,19 @@
         {
             "type": "cppbuild",
             "label": "C/C++: gcc.exe build active file",
-            "command": "C:\\qp\\qtools\\MinGW32\\bin\\gcc.exe",
+            "command": "C:\\MinGW\\bin\\gcc.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
-                "${workspaceFolder}/src/*.c",
+                "D:\\VS code\\src\\Array.c",
+                "D:\\VS code\\src\\LinkedList.c",
+                "D:\\VS code\\src\\RingBuffer.c",
+                "D:\\VS code\\src\\String.c",
+                "D:\\VS code\\inc\\Array.h",
+                "D:\\VS code\\inc\\LinkedList.h",
+                "D:\\VS code\\inc\\RingBuffer.h",
+                "D:\\VS code\\inc\\String.h",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],

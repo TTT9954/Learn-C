@@ -21,10 +21,9 @@ void Output(const int arr[], int *size)
 
 int swap(int *a, int *b)
 {
-    int temp = 0;
-    temp =  *a;
+    int temp =  *a;
     *a = *b;
-    *b = *a;
+    *b = temp;
 }
 
 int Search(int a, int x)
@@ -108,7 +107,7 @@ int Count_Freq_Appear(int a[], int *size, int x)
 
 void BubbleSort(int a[], int *size)
 {
-    for(int i = 0; i < *size; i++)
+    for(int i = 0; i < (*size)-1; i++)
     {
         for(int j = i+1; j < *size; j++)
         {
@@ -140,8 +139,7 @@ int Delete_Element(int *a, int *size, int element_del)
         {
             is_del = 1;
             index_del = i;
-        }
-        
+        } 
     }
     if(is_del == 1)
     {      
