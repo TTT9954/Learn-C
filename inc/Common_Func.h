@@ -1,7 +1,7 @@
 #ifndef _COMMON_FUNC_H
 #define _COMMON_FUNC_H
 
-#include "../inc/main.h"
+#include "main.h"
 
 void IntToStr(char *str, uint32_t number);
 void tostring(char *str, int num);
