@@ -1,4 +1,4 @@
-#include "../inc/RingBuffer.h"
+#include "RingBuffer.h"
 
 RingBuffer_t RxBuffer;
 
