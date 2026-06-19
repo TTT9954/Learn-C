@@ -1,7 +1,6 @@
-//#include "inc/main.h"
-#include "inc/LinkedList.h"
-#include "inc/Common_Func.h"
-#include "inc/String.h"
+#include "LinkedList.h"
+#include "Common_Func.h"
+#include "String.h"
 
 typedef struct stack
 {
@@ -29,7 +28,3 @@ int main(int argc, char *argv[])
    displayLinkedList(list_1);
    return 0;
 }
-
-
-
- 
