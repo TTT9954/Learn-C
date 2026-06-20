@@ -116,6 +116,58 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named LinkedList
+
+# Build rule for target.
+LinkedList: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 LinkedList
+.PHONY : LinkedList
+
+# fast build rule for target.
+LinkedList/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkedList.dir\build.make CMakeFiles/LinkedList.dir/build
+.PHONY : LinkedList/fast
+
+#=============================================================================
+# Target rules for targets named Common_Func
+
+# Build rule for target.
+Common_Func: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Common_Func
+.PHONY : Common_Func
+
+# fast build rule for target.
+Common_Func/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Common_Func.dir\build.make CMakeFiles/Common_Func.dir/build
+.PHONY : Common_Func/fast
+
+#=============================================================================
+# Target rules for targets named RingBuffer
+
+# Build rule for target.
+RingBuffer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 RingBuffer
+.PHONY : RingBuffer
+
+# fast build rule for target.
+RingBuffer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RingBuffer.dir\build.make CMakeFiles/RingBuffer.dir/build
+.PHONY : RingBuffer/fast
+
+#=============================================================================
+# Target rules for targets named Stack
+
+# Build rule for target.
+Stack: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Stack
+.PHONY : Stack
+
+# fast build rule for target.
+Stack/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Stack.dir\build.make CMakeFiles/Stack.dir/build
+.PHONY : Stack/fast
+
+#=============================================================================
 # Target rules for targets named Learn-C
 
 # Build rule for target.
@@ -157,6 +209,7 @@ src/Common_Func.obj: src/Common_Func.c.obj
 
 # target to build an object file
 src/Common_Func.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Common_Func.dir\build.make CMakeFiles/Common_Func.dir/src/Common_Func.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Learn-C.dir\build.make CMakeFiles/Learn-C.dir/src/Common_Func.c.obj
 .PHONY : src/Common_Func.c.obj
 
@@ -165,6 +218,7 @@ src/Common_Func.i: src/Common_Func.c.i
 
 # target to preprocess a source file
 src/Common_Func.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Common_Func.dir\build.make CMakeFiles/Common_Func.dir/src/Common_Func.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Learn-C.dir\build.make CMakeFiles/Learn-C.dir/src/Common_Func.c.i
 .PHONY : src/Common_Func.c.i
 
@@ -173,6 +227,7 @@ src/Common_Func.s: src/Common_Func.c.s
 
 # target to generate assembly for a file
 src/Common_Func.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Common_Func.dir\build.make CMakeFiles/Common_Func.dir/src/Common_Func.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Learn-C.dir\build.make CMakeFiles/Learn-C.dir/src/Common_Func.c.s
 .PHONY : src/Common_Func.c.s
 
@@ -181,6 +236,7 @@ src/LinkedList.obj: src/LinkedList.c.obj
 
 # target to build an object file
 src/LinkedList.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkedList.dir\build.make CMakeFiles/LinkedList.dir/src/LinkedList.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Learn-C.dir\build.make CMakeFiles/Learn-C.dir/src/LinkedList.c.obj
 .PHONY : src/LinkedList.c.obj
 
@@ -189,6 +245,7 @@ src/LinkedList.i: src/LinkedList.c.i
 
 # target to preprocess a source file
 src/LinkedList.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkedList.dir\build.make CMakeFiles/LinkedList.dir/src/LinkedList.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Learn-C.dir\build.make CMakeFiles/Learn-C.dir/src/LinkedList.c.i
 .PHONY : src/LinkedList.c.i
 
@@ -197,8 +254,63 @@ src/LinkedList.s: src/LinkedList.c.s
 
 # target to generate assembly for a file
 src/LinkedList.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkedList.dir\build.make CMakeFiles/LinkedList.dir/src/LinkedList.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Learn-C.dir\build.make CMakeFiles/Learn-C.dir/src/LinkedList.c.s
 .PHONY : src/LinkedList.c.s
+
+src/RingBuffer.obj: src/RingBuffer.c.obj
+.PHONY : src/RingBuffer.obj
+
+# target to build an object file
+src/RingBuffer.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RingBuffer.dir\build.make CMakeFiles/RingBuffer.dir/src/RingBuffer.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Learn-C.dir\build.make CMakeFiles/Learn-C.dir/src/RingBuffer.c.obj
+.PHONY : src/RingBuffer.c.obj
+
+src/RingBuffer.i: src/RingBuffer.c.i
+.PHONY : src/RingBuffer.i
+
+# target to preprocess a source file
+src/RingBuffer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RingBuffer.dir\build.make CMakeFiles/RingBuffer.dir/src/RingBuffer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Learn-C.dir\build.make CMakeFiles/Learn-C.dir/src/RingBuffer.c.i
+.PHONY : src/RingBuffer.c.i
+
+src/RingBuffer.s: src/RingBuffer.c.s
+.PHONY : src/RingBuffer.s
+
+# target to generate assembly for a file
+src/RingBuffer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RingBuffer.dir\build.make CMakeFiles/RingBuffer.dir/src/RingBuffer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Learn-C.dir\build.make CMakeFiles/Learn-C.dir/src/RingBuffer.c.s
+.PHONY : src/RingBuffer.c.s
+
+src/Stack.obj: src/Stack.c.obj
+.PHONY : src/Stack.obj
+
+# target to build an object file
+src/Stack.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Stack.dir\build.make CMakeFiles/Stack.dir/src/Stack.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Learn-C.dir\build.make CMakeFiles/Learn-C.dir/src/Stack.c.obj
+.PHONY : src/Stack.c.obj
+
+src/Stack.i: src/Stack.c.i
+.PHONY : src/Stack.i
+
+# target to preprocess a source file
+src/Stack.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Stack.dir\build.make CMakeFiles/Stack.dir/src/Stack.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Learn-C.dir\build.make CMakeFiles/Learn-C.dir/src/Stack.c.i
+.PHONY : src/Stack.c.i
+
+src/Stack.s: src/Stack.c.s
+.PHONY : src/Stack.s
+
+# target to generate assembly for a file
+src/Stack.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Stack.dir\build.make CMakeFiles/Stack.dir/src/Stack.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Learn-C.dir\build.make CMakeFiles/Learn-C.dir/src/Stack.c.s
+.PHONY : src/Stack.c.s
 
 # Help Target
 help:
@@ -208,7 +320,11 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Common_Func
 	@echo ... Learn-C
+	@echo ... LinkedList
+	@echo ... RingBuffer
+	@echo ... Stack
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
@@ -218,6 +334,12 @@ help:
 	@echo ... src/LinkedList.obj
 	@echo ... src/LinkedList.i
 	@echo ... src/LinkedList.s
+	@echo ... src/RingBuffer.obj
+	@echo ... src/RingBuffer.i
+	@echo ... src/RingBuffer.s
+	@echo ... src/Stack.obj
+	@echo ... src/Stack.i
+	@echo ... src/Stack.s
 .PHONY : help
 
 

@@ -10,4 +10,5 @@ CMakeFiles/Learn-C.dir/main.c.obj: D:\Learn-C\main.c \
  d:\learn-c\inc\main.h c:\mingw\include\math.h c:\mingw\include\time.h \
  c:\mingw\include\sys\types.h c:\mingw\include\stdlib.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\stdbool.h \
- c:\mingw\include\assert.h D:/Learn-C/inc/Common_Func.h
+ c:\mingw\include\assert.h D:/Learn-C/inc/Common_Func.h \
+ D:/Learn-C/inc/Stack.h

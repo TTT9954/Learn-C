@@ -59,5 +59,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/LinkedList.dir/DependInfo.cmake"
+  "CMakeFiles/Common_Func.dir/DependInfo.cmake"
+  "CMakeFiles/RingBuffer.dir/DependInfo.cmake"
+  "CMakeFiles/Stack.dir/DependInfo.cmake"
   "CMakeFiles/Learn-C.dir/DependInfo.cmake"
   )

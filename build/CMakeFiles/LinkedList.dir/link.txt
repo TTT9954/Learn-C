@@ -1,0 +1,2 @@
+C:\MinGW\bin\ar.exe qc libLinkedList.a CMakeFiles/LinkedList.dir/src/LinkedList.c.obj
+C:\MinGW\bin\ranlib.exe libLinkedList.a

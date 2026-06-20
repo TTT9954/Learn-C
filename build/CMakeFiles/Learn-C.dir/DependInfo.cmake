@@ -11,6 +11,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/Learn-C/main.c" "CMakeFiles/Learn-C.dir/main.c.obj" "gcc" "CMakeFiles/Learn-C.dir/main.c.obj.d"
   "D:/Learn-C/src/Common_Func.c" "CMakeFiles/Learn-C.dir/src/Common_Func.c.obj" "gcc" "CMakeFiles/Learn-C.dir/src/Common_Func.c.obj.d"
   "D:/Learn-C/src/LinkedList.c" "CMakeFiles/Learn-C.dir/src/LinkedList.c.obj" "gcc" "CMakeFiles/Learn-C.dir/src/LinkedList.c.obj.d"
+  "D:/Learn-C/src/RingBuffer.c" "CMakeFiles/Learn-C.dir/src/RingBuffer.c.obj" "gcc" "CMakeFiles/Learn-C.dir/src/RingBuffer.c.obj.d"
+  "D:/Learn-C/src/Stack.c" "CMakeFiles/Learn-C.dir/src/Stack.c.obj" "gcc" "CMakeFiles/Learn-C.dir/src/Stack.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

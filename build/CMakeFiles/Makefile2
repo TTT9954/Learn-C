@@ -62,10 +62,18 @@ CMAKE_BINARY_DIR = D:\Learn-C\build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/LinkedList.dir/all
+all: CMakeFiles/Common_Func.dir/all
+all: CMakeFiles/RingBuffer.dir/all
+all: CMakeFiles/Stack.dir/all
 all: CMakeFiles/Learn-C.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
+codegen: CMakeFiles/LinkedList.dir/codegen
+codegen: CMakeFiles/Common_Func.dir/codegen
+codegen: CMakeFiles/RingBuffer.dir/codegen
+codegen: CMakeFiles/Stack.dir/codegen
 codegen: CMakeFiles/Learn-C.dir/codegen
 .PHONY : codegen
 
@@ -74,22 +82,157 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/LinkedList.dir/clean
+clean: CMakeFiles/Common_Func.dir/clean
+clean: CMakeFiles/RingBuffer.dir/clean
+clean: CMakeFiles/Stack.dir/clean
 clean: CMakeFiles/Learn-C.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/LinkedList.dir
+
+# All Build rule for target.
+CMakeFiles/LinkedList.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkedList.dir\build.make CMakeFiles/LinkedList.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkedList.dir\build.make CMakeFiles/LinkedList.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Learn-C\build\CMakeFiles --progress-num=9,10 "Built target LinkedList"
+.PHONY : CMakeFiles/LinkedList.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/LinkedList.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Learn-C\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/LinkedList.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Learn-C\build\CMakeFiles 0
+.PHONY : CMakeFiles/LinkedList.dir/rule
+
+# Convenience name for target.
+LinkedList: CMakeFiles/LinkedList.dir/rule
+.PHONY : LinkedList
+
+# codegen rule for target.
+CMakeFiles/LinkedList.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkedList.dir\build.make CMakeFiles/LinkedList.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Learn-C\build\CMakeFiles --progress-num=9,10 "Finished codegen for target LinkedList"
+.PHONY : CMakeFiles/LinkedList.dir/codegen
+
+# clean rule for target.
+CMakeFiles/LinkedList.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkedList.dir\build.make CMakeFiles/LinkedList.dir/clean
+.PHONY : CMakeFiles/LinkedList.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Common_Func.dir
+
+# All Build rule for target.
+CMakeFiles/Common_Func.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Common_Func.dir\build.make CMakeFiles/Common_Func.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Common_Func.dir\build.make CMakeFiles/Common_Func.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Learn-C\build\CMakeFiles --progress-num=1,2 "Built target Common_Func"
+.PHONY : CMakeFiles/Common_Func.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Common_Func.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Learn-C\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Common_Func.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Learn-C\build\CMakeFiles 0
+.PHONY : CMakeFiles/Common_Func.dir/rule
+
+# Convenience name for target.
+Common_Func: CMakeFiles/Common_Func.dir/rule
+.PHONY : Common_Func
+
+# codegen rule for target.
+CMakeFiles/Common_Func.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Common_Func.dir\build.make CMakeFiles/Common_Func.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Learn-C\build\CMakeFiles --progress-num=1,2 "Finished codegen for target Common_Func"
+.PHONY : CMakeFiles/Common_Func.dir/codegen
+
+# clean rule for target.
+CMakeFiles/Common_Func.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Common_Func.dir\build.make CMakeFiles/Common_Func.dir/clean
+.PHONY : CMakeFiles/Common_Func.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/RingBuffer.dir
+
+# All Build rule for target.
+CMakeFiles/RingBuffer.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RingBuffer.dir\build.make CMakeFiles/RingBuffer.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RingBuffer.dir\build.make CMakeFiles/RingBuffer.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Learn-C\build\CMakeFiles --progress-num=11,12 "Built target RingBuffer"
+.PHONY : CMakeFiles/RingBuffer.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/RingBuffer.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Learn-C\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/RingBuffer.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Learn-C\build\CMakeFiles 0
+.PHONY : CMakeFiles/RingBuffer.dir/rule
+
+# Convenience name for target.
+RingBuffer: CMakeFiles/RingBuffer.dir/rule
+.PHONY : RingBuffer
+
+# codegen rule for target.
+CMakeFiles/RingBuffer.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RingBuffer.dir\build.make CMakeFiles/RingBuffer.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Learn-C\build\CMakeFiles --progress-num=11,12 "Finished codegen for target RingBuffer"
+.PHONY : CMakeFiles/RingBuffer.dir/codegen
+
+# clean rule for target.
+CMakeFiles/RingBuffer.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RingBuffer.dir\build.make CMakeFiles/RingBuffer.dir/clean
+.PHONY : CMakeFiles/RingBuffer.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Stack.dir
+
+# All Build rule for target.
+CMakeFiles/Stack.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Stack.dir\build.make CMakeFiles/Stack.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Stack.dir\build.make CMakeFiles/Stack.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Learn-C\build\CMakeFiles --progress-num=13,14 "Built target Stack"
+.PHONY : CMakeFiles/Stack.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Stack.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Learn-C\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Stack.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Learn-C\build\CMakeFiles 0
+.PHONY : CMakeFiles/Stack.dir/rule
+
+# Convenience name for target.
+Stack: CMakeFiles/Stack.dir/rule
+.PHONY : Stack
+
+# codegen rule for target.
+CMakeFiles/Stack.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Stack.dir\build.make CMakeFiles/Stack.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Learn-C\build\CMakeFiles --progress-num=13,14 "Finished codegen for target Stack"
+.PHONY : CMakeFiles/Stack.dir/codegen
+
+# clean rule for target.
+CMakeFiles/Stack.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Stack.dir\build.make CMakeFiles/Stack.dir/clean
+.PHONY : CMakeFiles/Stack.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/Learn-C.dir
 
 # All Build rule for target.
-CMakeFiles/Learn-C.dir/all:
+CMakeFiles/Learn-C.dir/all: CMakeFiles/LinkedList.dir/all
+CMakeFiles/Learn-C.dir/all: CMakeFiles/Common_Func.dir/all
+CMakeFiles/Learn-C.dir/all: CMakeFiles/RingBuffer.dir/all
+CMakeFiles/Learn-C.dir/all: CMakeFiles/Stack.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Learn-C.dir\build.make CMakeFiles/Learn-C.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Learn-C.dir\build.make CMakeFiles/Learn-C.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Learn-C\build\CMakeFiles --progress-num=1,2,3,4 "Built target Learn-C"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Learn-C\build\CMakeFiles --progress-num=3,4,5,6,7,8 "Built target Learn-C"
 .PHONY : CMakeFiles/Learn-C.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Learn-C.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Learn-C\build\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Learn-C\build\CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Learn-C.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Learn-C\build\CMakeFiles 0
 .PHONY : CMakeFiles/Learn-C.dir/rule
@@ -101,7 +244,7 @@ Learn-C: CMakeFiles/Learn-C.dir/rule
 # codegen rule for target.
 CMakeFiles/Learn-C.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Learn-C.dir\build.make CMakeFiles/Learn-C.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Learn-C\build\CMakeFiles --progress-num=1,2,3,4 "Finished codegen for target Learn-C"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Learn-C\build\CMakeFiles --progress-num=3,4,5,6,7,8 "Finished codegen for target Learn-C"
 .PHONY : CMakeFiles/Learn-C.dir/codegen
 
 # clean rule for target.

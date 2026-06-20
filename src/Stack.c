@@ -1,33 +1,69 @@
 #include "Stack.h"
 
-p_stack stackInit(p_stack Stack, uint8_t capacity)
+mystack stackInit(mystack Stack, uint8_t size)
 {
-   Stack->capacity = capacity;
-   Stack->item = (uint8_t *)malloc(sizeof(uint8_t) * Stack->capacity);
-   return Stack;
-}
+   Stack = (mystack)malloc(sizeof(mystack));
 
-p_stack push(p_stack Stack, uint8_t data)
-{
    if(Stack == NULL)
    {
+      assert(Stack != NULL);
       return NULL;
    }
 
+   size = (size >= 0) ? ((size <= MAX_CAPACITY) ? size : MAX_CAPACITY) : 0;
+
+   Stack->size = size;
+
+   Stack->capacity = 0;
+
+   Stack->item = (uint8_t *)malloc(sizeof(uint8_t) * Stack->size);
+
+   if(Stack->item == NULL)
+   {
+      assert(Stack->item != NULL);
+      free(Stack);
+      return NULL;
+   }
+
+   return (Stack);
+}
+
+mystack push(mystack Stack, uint8_t data)
+{
+   if(Stack == NULL)
+   {
+      printf("ERROR: Stack pointer is NULL!\n");
+      return NULL;
+   }
    if(stackIsFull(Stack))
    {
+      printf("ERROR: Attempted to push data (%u) into a full stack! (size = %u)\n", data, Stack->size);
       return Stack;
    }
 
    Stack->item[Stack->capacity] = data;
    Stack->capacity++;
    
+   
    return Stack;
 }
 
-p_stack pop(p_stack Stack, uint8_t *data)
+mystack pop(mystack Stack, uint8_t *data)
 {
    *data = Stack->item[Stack->capacity - 1];
+
+   if(Stack == NULL)
+   {
+      printf("ERROR: Stack pointer is NULL!\n");
+      return NULL;
+   }
+
+   if(stackIsEmpty(Stack))
+   {
+      printf("ERROR: Attempted to pop data from an empty stack!\n");
+      return Stack;
+   }
+
    Stack->capacity--;
 
    if(Stack->capacity < 0)
@@ -38,45 +74,45 @@ p_stack pop(p_stack Stack, uint8_t *data)
    return Stack;
 }
 
-p_stack peek(p_stack Stack, uint8_t *data)
+mystack peek(mystack Stack, uint8_t *data)
 {
    *data = Stack->item[Stack->capacity - 1];
    return Stack;
 }
 
-p_stack stackFree(p_stack Stack)
+mystack stackFree(mystack Stack)
 {
    free(Stack->item);
    free(Stack);
    return NULL;
 }
 
-p_stack stackClear(p_stack Stack)
+mystack stackClear(mystack Stack)
 {
    Stack->capacity = 0;
    return Stack;
 }
 
-p_stack stackIsFull(p_stack Stack)
+bool stackIsFull(mystack Stack)
 {
-   return (Stack->capacity == MAX_CAPACITY);
+   return (Stack->capacity >= (Stack->size));
 }
 
-p_stack stackIsEmpty(p_stack Stack)
+bool stackIsEmpty(mystack Stack)
 {
    return (Stack->capacity == 0);
 }
 
-p_stack stackGetCapacity(p_stack Stack)
+uint8_t stackGetCapacity(mystack Stack)
 {
    return Stack->capacity;
 }
 
-p_stack printStack(p_stack Stack)
+mystack printStack(mystack Stack)
 {
-   for(int i = 0; i < Stack->capacity; i++)
+   for(uint8_t i = 0; i < Stack->capacity; i++)
    {
-      printf("%d ", Stack->item[i]);
+      printf("%u ", Stack->item[i]);
    }
    printf("\n");
    return Stack;

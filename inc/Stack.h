@@ -6,20 +6,21 @@
 #define MAX_CAPACITY 255
 typedef struct stack
 {
+   uint8_t size;
    uint8_t capacity;
    uint8_t *item;
 }Stack;
 
-typedef Stack *p_stack;
+typedef Stack *mystack;
 
-p_stack stackInit(p_stack Stack, uint8_t capacity);
-p_stack push(p_stack Stack, uint8_t data);
-p_stack pop(p_stack Stack, uint8_t *data);
-p_stack peek(p_stack Stack, uint8_t *data);
-p_stack stackFree(p_stack Stack);
-p_stack stackIsFull(p_stack Stack);
-p_stack stackIsEmpty(p_stack Stack);
-p_stack stackGetCapacity(p_stack Stack);
-p_stack printStack(p_stack Stack);
+mystack stackInit(mystack Stack, uint8_t size);
+mystack push(mystack Stack, uint8_t data);
+mystack pop(mystack Stack, uint8_t *data);
+mystack peek(mystack Stack, uint8_t *data);
+mystack stackFree(mystack Stack);
+bool stackIsFull(mystack  Stack);
+bool stackIsEmpty(mystack Stack);
+uint8_t stackGetCapacity(mystack Stack);
+mystack printStack(mystack Stack);
 
 #endif
