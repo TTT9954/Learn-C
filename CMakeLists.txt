@@ -20,10 +20,16 @@ add_library(RingBuffer STATIC
     inc/RingBuffer.h
 )
 
+add_library(Stack STATIC
+    src/Stack.c
+    inc/Stack.h
+)
+
 add_executable(Learn-C main.c 
     src/LinkedList.c
     src/Common_Func.c
     src/RingBuffer.c
+    src/Stack.c
 )
 
 target_include_directories(Learn-C PRIVATE inc)
