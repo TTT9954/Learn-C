@@ -76,15 +76,15 @@ CMakeFiles/LinkedList.dir/src/LinkedList.c.obj: CMakeFiles/LinkedList.dir/includ
 CMakeFiles/LinkedList.dir/src/LinkedList.c.obj: D:/Learn-C/src/LinkedList.c
 CMakeFiles/LinkedList.dir/src/LinkedList.c.obj: CMakeFiles/LinkedList.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Learn-C\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/LinkedList.dir/src/LinkedList.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LinkedList.dir/src/LinkedList.c.obj -MF CMakeFiles\LinkedList.dir\src\LinkedList.c.obj.d -o CMakeFiles\LinkedList.dir\src\LinkedList.c.obj -c D:\Learn-C\src\LinkedList.c
+	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LinkedList.dir/src/LinkedList.c.obj -MF CMakeFiles\LinkedList.dir\src\LinkedList.c.obj.d -o CMakeFiles\LinkedList.dir\src\LinkedList.c.obj -c D:\Learn-C\src\LinkedList.c
 
 CMakeFiles/LinkedList.dir/src/LinkedList.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LinkedList.dir/src/LinkedList.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Learn-C\src\LinkedList.c > CMakeFiles\LinkedList.dir\src\LinkedList.c.i
+	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Learn-C\src\LinkedList.c > CMakeFiles\LinkedList.dir\src\LinkedList.c.i
 
 CMakeFiles/LinkedList.dir/src/LinkedList.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LinkedList.dir/src/LinkedList.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Learn-C\src\LinkedList.c -o CMakeFiles\LinkedList.dir\src\LinkedList.c.s
+	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Learn-C\src\LinkedList.c -o CMakeFiles\LinkedList.dir\src\LinkedList.c.s
 
 # Object files for target LinkedList
 LinkedList_OBJECTS = \

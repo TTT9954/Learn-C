@@ -1,2 +1,2 @@
-C:\MinGW\bin\ar.exe qc libCommon_Func.a CMakeFiles/Common_Func.dir/src/Common_Func.c.obj
-C:\MinGW\bin\ranlib.exe libCommon_Func.a
+C:\msys64\ucrt64\bin\ar.exe qc libCommon_Func.a CMakeFiles/Common_Func.dir/src/Common_Func.c.obj
+C:\msys64\ucrt64\bin\ranlib.exe libCommon_Func.a

@@ -76,15 +76,15 @@ CMakeFiles/Stack.dir/src/Stack.c.obj: CMakeFiles/Stack.dir/includes_C.rsp
 CMakeFiles/Stack.dir/src/Stack.c.obj: D:/Learn-C/src/Stack.c
 CMakeFiles/Stack.dir/src/Stack.c.obj: CMakeFiles/Stack.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Learn-C\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Stack.dir/src/Stack.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Stack.dir/src/Stack.c.obj -MF CMakeFiles\Stack.dir\src\Stack.c.obj.d -o CMakeFiles\Stack.dir\src\Stack.c.obj -c D:\Learn-C\src\Stack.c
+	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Stack.dir/src/Stack.c.obj -MF CMakeFiles\Stack.dir\src\Stack.c.obj.d -o CMakeFiles\Stack.dir\src\Stack.c.obj -c D:\Learn-C\src\Stack.c
 
 CMakeFiles/Stack.dir/src/Stack.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Stack.dir/src/Stack.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Learn-C\src\Stack.c > CMakeFiles\Stack.dir\src\Stack.c.i
+	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Learn-C\src\Stack.c > CMakeFiles\Stack.dir\src\Stack.c.i
 
 CMakeFiles/Stack.dir/src/Stack.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Stack.dir/src/Stack.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Learn-C\src\Stack.c -o CMakeFiles\Stack.dir\src\Stack.c.s
+	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Learn-C\src\Stack.c -o CMakeFiles\Stack.dir\src\Stack.c.s
 
 # Object files for target Stack
 Stack_OBJECTS = \

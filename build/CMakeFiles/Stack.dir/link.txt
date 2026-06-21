@@ -1,2 +1,2 @@
-C:\MinGW\bin\ar.exe qc libStack.a CMakeFiles/Stack.dir/src/Stack.c.obj
-C:\MinGW\bin\ranlib.exe libStack.a
+C:\msys64\ucrt64\bin\ar.exe qc libStack.a CMakeFiles/Stack.dir/src/Stack.c.obj
+C:\msys64\ucrt64\bin\ranlib.exe libStack.a

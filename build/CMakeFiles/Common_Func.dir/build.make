@@ -76,15 +76,15 @@ CMakeFiles/Common_Func.dir/src/Common_Func.c.obj: CMakeFiles/Common_Func.dir/inc
 CMakeFiles/Common_Func.dir/src/Common_Func.c.obj: D:/Learn-C/src/Common_Func.c
 CMakeFiles/Common_Func.dir/src/Common_Func.c.obj: CMakeFiles/Common_Func.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Learn-C\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Common_Func.dir/src/Common_Func.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Common_Func.dir/src/Common_Func.c.obj -MF CMakeFiles\Common_Func.dir\src\Common_Func.c.obj.d -o CMakeFiles\Common_Func.dir\src\Common_Func.c.obj -c D:\Learn-C\src\Common_Func.c
+	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Common_Func.dir/src/Common_Func.c.obj -MF CMakeFiles\Common_Func.dir\src\Common_Func.c.obj.d -o CMakeFiles\Common_Func.dir\src\Common_Func.c.obj -c D:\Learn-C\src\Common_Func.c
 
 CMakeFiles/Common_Func.dir/src/Common_Func.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Common_Func.dir/src/Common_Func.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Learn-C\src\Common_Func.c > CMakeFiles\Common_Func.dir\src\Common_Func.c.i
+	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Learn-C\src\Common_Func.c > CMakeFiles\Common_Func.dir\src\Common_Func.c.i
 
 CMakeFiles/Common_Func.dir/src/Common_Func.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Common_Func.dir/src/Common_Func.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Learn-C\src\Common_Func.c -o CMakeFiles\Common_Func.dir\src\Common_Func.c.s
+	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Learn-C\src\Common_Func.c -o CMakeFiles\Common_Func.dir\src\Common_Func.c.s
 
 # Object files for target Common_Func
 Common_Func_OBJECTS = \

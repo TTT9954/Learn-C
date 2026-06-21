@@ -76,75 +76,75 @@ CMakeFiles/Learn-C.dir/main.c.obj: CMakeFiles/Learn-C.dir/includes_C.rsp
 CMakeFiles/Learn-C.dir/main.c.obj: D:/Learn-C/main.c
 CMakeFiles/Learn-C.dir/main.c.obj: CMakeFiles/Learn-C.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Learn-C\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Learn-C.dir/main.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Learn-C.dir/main.c.obj -MF CMakeFiles\Learn-C.dir\main.c.obj.d -o CMakeFiles\Learn-C.dir\main.c.obj -c D:\Learn-C\main.c
+	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Learn-C.dir/main.c.obj -MF CMakeFiles\Learn-C.dir\main.c.obj.d -o CMakeFiles\Learn-C.dir\main.c.obj -c D:\Learn-C\main.c
 
 CMakeFiles/Learn-C.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Learn-C.dir/main.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Learn-C\main.c > CMakeFiles\Learn-C.dir\main.c.i
+	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Learn-C\main.c > CMakeFiles\Learn-C.dir\main.c.i
 
 CMakeFiles/Learn-C.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Learn-C.dir/main.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Learn-C\main.c -o CMakeFiles\Learn-C.dir\main.c.s
+	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Learn-C\main.c -o CMakeFiles\Learn-C.dir\main.c.s
 
 CMakeFiles/Learn-C.dir/src/LinkedList.c.obj: CMakeFiles/Learn-C.dir/flags.make
 CMakeFiles/Learn-C.dir/src/LinkedList.c.obj: CMakeFiles/Learn-C.dir/includes_C.rsp
 CMakeFiles/Learn-C.dir/src/LinkedList.c.obj: D:/Learn-C/src/LinkedList.c
 CMakeFiles/Learn-C.dir/src/LinkedList.c.obj: CMakeFiles/Learn-C.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Learn-C\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Learn-C.dir/src/LinkedList.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Learn-C.dir/src/LinkedList.c.obj -MF CMakeFiles\Learn-C.dir\src\LinkedList.c.obj.d -o CMakeFiles\Learn-C.dir\src\LinkedList.c.obj -c D:\Learn-C\src\LinkedList.c
+	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Learn-C.dir/src/LinkedList.c.obj -MF CMakeFiles\Learn-C.dir\src\LinkedList.c.obj.d -o CMakeFiles\Learn-C.dir\src\LinkedList.c.obj -c D:\Learn-C\src\LinkedList.c
 
 CMakeFiles/Learn-C.dir/src/LinkedList.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Learn-C.dir/src/LinkedList.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Learn-C\src\LinkedList.c > CMakeFiles\Learn-C.dir\src\LinkedList.c.i
+	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Learn-C\src\LinkedList.c > CMakeFiles\Learn-C.dir\src\LinkedList.c.i
 
 CMakeFiles/Learn-C.dir/src/LinkedList.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Learn-C.dir/src/LinkedList.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Learn-C\src\LinkedList.c -o CMakeFiles\Learn-C.dir\src\LinkedList.c.s
+	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Learn-C\src\LinkedList.c -o CMakeFiles\Learn-C.dir\src\LinkedList.c.s
 
 CMakeFiles/Learn-C.dir/src/Common_Func.c.obj: CMakeFiles/Learn-C.dir/flags.make
 CMakeFiles/Learn-C.dir/src/Common_Func.c.obj: CMakeFiles/Learn-C.dir/includes_C.rsp
 CMakeFiles/Learn-C.dir/src/Common_Func.c.obj: D:/Learn-C/src/Common_Func.c
 CMakeFiles/Learn-C.dir/src/Common_Func.c.obj: CMakeFiles/Learn-C.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Learn-C\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Learn-C.dir/src/Common_Func.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Learn-C.dir/src/Common_Func.c.obj -MF CMakeFiles\Learn-C.dir\src\Common_Func.c.obj.d -o CMakeFiles\Learn-C.dir\src\Common_Func.c.obj -c D:\Learn-C\src\Common_Func.c
+	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Learn-C.dir/src/Common_Func.c.obj -MF CMakeFiles\Learn-C.dir\src\Common_Func.c.obj.d -o CMakeFiles\Learn-C.dir\src\Common_Func.c.obj -c D:\Learn-C\src\Common_Func.c
 
 CMakeFiles/Learn-C.dir/src/Common_Func.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Learn-C.dir/src/Common_Func.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Learn-C\src\Common_Func.c > CMakeFiles\Learn-C.dir\src\Common_Func.c.i
+	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Learn-C\src\Common_Func.c > CMakeFiles\Learn-C.dir\src\Common_Func.c.i
 
 CMakeFiles/Learn-C.dir/src/Common_Func.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Learn-C.dir/src/Common_Func.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Learn-C\src\Common_Func.c -o CMakeFiles\Learn-C.dir\src\Common_Func.c.s
+	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Learn-C\src\Common_Func.c -o CMakeFiles\Learn-C.dir\src\Common_Func.c.s
 
 CMakeFiles/Learn-C.dir/src/RingBuffer.c.obj: CMakeFiles/Learn-C.dir/flags.make
 CMakeFiles/Learn-C.dir/src/RingBuffer.c.obj: CMakeFiles/Learn-C.dir/includes_C.rsp
 CMakeFiles/Learn-C.dir/src/RingBuffer.c.obj: D:/Learn-C/src/RingBuffer.c
 CMakeFiles/Learn-C.dir/src/RingBuffer.c.obj: CMakeFiles/Learn-C.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Learn-C\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Learn-C.dir/src/RingBuffer.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Learn-C.dir/src/RingBuffer.c.obj -MF CMakeFiles\Learn-C.dir\src\RingBuffer.c.obj.d -o CMakeFiles\Learn-C.dir\src\RingBuffer.c.obj -c D:\Learn-C\src\RingBuffer.c
+	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Learn-C.dir/src/RingBuffer.c.obj -MF CMakeFiles\Learn-C.dir\src\RingBuffer.c.obj.d -o CMakeFiles\Learn-C.dir\src\RingBuffer.c.obj -c D:\Learn-C\src\RingBuffer.c
 
 CMakeFiles/Learn-C.dir/src/RingBuffer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Learn-C.dir/src/RingBuffer.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Learn-C\src\RingBuffer.c > CMakeFiles\Learn-C.dir\src\RingBuffer.c.i
+	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Learn-C\src\RingBuffer.c > CMakeFiles\Learn-C.dir\src\RingBuffer.c.i
 
 CMakeFiles/Learn-C.dir/src/RingBuffer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Learn-C.dir/src/RingBuffer.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Learn-C\src\RingBuffer.c -o CMakeFiles\Learn-C.dir\src\RingBuffer.c.s
+	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Learn-C\src\RingBuffer.c -o CMakeFiles\Learn-C.dir\src\RingBuffer.c.s
 
 CMakeFiles/Learn-C.dir/src/Stack.c.obj: CMakeFiles/Learn-C.dir/flags.make
 CMakeFiles/Learn-C.dir/src/Stack.c.obj: CMakeFiles/Learn-C.dir/includes_C.rsp
 CMakeFiles/Learn-C.dir/src/Stack.c.obj: D:/Learn-C/src/Stack.c
 CMakeFiles/Learn-C.dir/src/Stack.c.obj: CMakeFiles/Learn-C.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Learn-C\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Learn-C.dir/src/Stack.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Learn-C.dir/src/Stack.c.obj -MF CMakeFiles\Learn-C.dir\src\Stack.c.obj.d -o CMakeFiles\Learn-C.dir\src\Stack.c.obj -c D:\Learn-C\src\Stack.c
+	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Learn-C.dir/src/Stack.c.obj -MF CMakeFiles\Learn-C.dir\src\Stack.c.obj.d -o CMakeFiles\Learn-C.dir\src\Stack.c.obj -c D:\Learn-C\src\Stack.c
 
 CMakeFiles/Learn-C.dir/src/Stack.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Learn-C.dir/src/Stack.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Learn-C\src\Stack.c > CMakeFiles\Learn-C.dir\src\Stack.c.i
+	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Learn-C\src\Stack.c > CMakeFiles\Learn-C.dir\src\Stack.c.i
 
 CMakeFiles/Learn-C.dir/src/Stack.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Learn-C.dir/src/Stack.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Learn-C\src\Stack.c -o CMakeFiles\Learn-C.dir\src\Stack.c.s
+	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Learn-C\src\Stack.c -o CMakeFiles\Learn-C.dir\src\Stack.c.s
 
 # Object files for target Learn-C
 Learn__C_OBJECTS = \
