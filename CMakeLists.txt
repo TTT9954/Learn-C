@@ -25,17 +25,33 @@ add_library(Stack STATIC
     inc/Stack.h
 )
 
+<<<<<<< HEAD
+=======
+add_library(StringSelf STATIC
+    src/StringSelf.c
+    inc/StringSelf.h
+)
+>>>>>>> cmake
 
 target_include_directories(LinkedList PUBLIC inc)
 target_include_directories(Common_Func PUBLIC inc)
 target_include_directories(RingBuffer PUBLIC inc)
 target_include_directories(Stack PUBLIC inc)
+<<<<<<< HEAD
+=======
+targiet_include_directories(StringSelf PUBLIC inc)
+>>>>>>> cmake
 
 add_executable(Learn-C main.c 
     src/LinkedList.c
     src/Common_Func.c
     src/RingBuffer.c
     src/Stack.c
+    src/StringSelf.c
 )
 
+<<<<<<< HEAD
 target_link_libraries(Learn-C PRIVATE LinkedList Common_Func RingBuffer Stack)
+=======
+target_link_libraries(Learn-C PRIVATE LinkedList Common_Func RingBuffer Stack StringSelf)
+>>>>>>> cmake

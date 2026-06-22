@@ -2,6 +2,7 @@
 
 bool isSpace(char c)
 {
+<<<<<<< HEAD
    if(c = ' ')
    {
       return 1;
@@ -9,6 +10,10 @@ bool isSpace(char c)
    return 0;
 }
 
+=======
+   return (c == ' ');
+}
+>>>>>>> cmake
 int count_char_noSpace(char *s)
 {
     int count=0, i=0;
@@ -62,7 +67,11 @@ void Delete(char s[30], int vitri)
     printf("%s\n", s);
 }
 
+<<<<<<< HEAD
 char *Add_char(char s[30], char k, int pos)
+=======
+char *Add_char(char s[], char k, int pos)
+>>>>>>> cmake
 {
     int length = strlen(s);
     char temp_c = 0;
