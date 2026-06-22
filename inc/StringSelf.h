@@ -1,7 +1,9 @@
-#ifndef STRING1_H
-#define STRING1_H
+#ifndef STRINGSELF_H
+#define STRINGSELF_H
 
-#include "../inc/main.h"
+#include "main.h"
+
+bool isSpace(char c);
 
 int count_char_noSpace(char *s);
 

@@ -1,5 +1,9 @@
-#include "../inc/String.h"
+#include "StringSelf.h"
 
+bool isSpace(char c)
+{
+   return (c == ' ');
+}
 int count_char_noSpace(char *s)
 {
     int count=0, i=0;
