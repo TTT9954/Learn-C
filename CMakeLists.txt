@@ -25,13 +25,23 @@ add_library(Stack STATIC
     inc/Stack.h
 )
 
+add_library(StringSelf STATIC
+    src/StringSelf.c
+    inc/StringSelf.h
+)
+
+target_include_directories(LinkedList PUBLIC inc)
+target_include_directories(Common_Func PUBLIC inc)
+target_include_directories(RingBuffer PUBLIC inc)
+target_include_directories(Stack PUBLIC inc)
+targiet_include_directories(StringSelf PUBLIC inc)
+
 add_executable(Learn-C main.c 
     src/LinkedList.c
     src/Common_Func.c
     src/RingBuffer.c
     src/Stack.c
+    src/StringSelf.c
 )
 
-target_include_directories(Learn-C PRIVATE inc)
-
-target_link_libraries(Learn-C PRIVATE LinkedList Common_Func RingBuffer)
+target_link_libraries(Learn-C PRIVATE LinkedList Common_Func RingBuffer Stack StringSelf)
