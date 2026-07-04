@@ -34,7 +34,7 @@ target_include_directories(LinkedList PUBLIC inc)
 target_include_directories(Common_Func PUBLIC inc)
 target_include_directories(RingBuffer PUBLIC inc)
 target_include_directories(Stack PUBLIC inc)
-targiet_include_directories(StringSelf PUBLIC inc)
+target_include_directories(StringSelf PUBLIC inc)
 
 add_executable(Learn-C main.c 
     src/LinkedList.c

@@ -2,18 +2,8 @@
 
 bool isSpace(char c)
 {
-<<<<<<< HEAD
-   if(c = ' ')
-   {
-      return 1;
-   }
-   return 0;
-}
-
-=======
    return (c == ' ');
 }
->>>>>>> cmake
 int count_char_noSpace(char *s)
 {
     int count=0, i=0;
@@ -67,11 +57,7 @@ void Delete(char s[30], int vitri)
     printf("%s\n", s);
 }
 
-<<<<<<< HEAD
-char *Add_char(char s[30], char k, int pos)
-=======
 char *Add_char(char s[], char k, int pos)
->>>>>>> cmake
 {
     int length = strlen(s);
     char temp_c = 0;
@@ -204,17 +190,52 @@ uint8_t CharToInt(char c)
    return (uint8_t)(c-'0'); 
 }
 
-uint32_t StringToInt(const char s[])
+uint32_t StringToInt(const char *s)
 {
-   uint32_t  temp;
+   uint32_t temp;
    uint32_t length = strlen(s);
    uint32_t n = (uint32_t)pow(10,(length-1));
    uint32_t number = 0;
    for(uint32_t i = 0; i < length; i++)
    {
-      temp = (CharToInt(s[i]))*n;
+      temp = (CharToInt((s[i])))*n;
       number += temp;
       n = n / 10;
    }
    return number;
+}
+
+String_t initStr(const char *s)
+{
+   return (String_t) {
+      .data = s,
+      .count = strlen(s)
+   };
+}
+
+char *chop_right_string(String_t *str)
+{
+   if (str == NULL || str->count == 0 || str->data == NULL) return NULL;
+
+   str->count -= 1;
+   char *s_temp = (char *)malloc(sizeof(char)*str->count);
+   for(uint8_t i = 0; i < str->count; i++)
+   {
+      s_temp[i] = *(str->data);
+      (str->data)++;
+   }
+   s_temp[str->count] = '\0';
+   
+   return s_temp;
+
+}
+
+
+
+void chop_left_string(String_t *str)
+{
+   if(str->count == 0) return;
+
+   str->count -= 1;
+   str->data += 1;
 }

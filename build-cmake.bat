@@ -10,6 +10,3 @@ cmake -S . -B build -G "%CMAKE_GENERATOR%" -DCMAKE_BUILD_TYPE=%CMAKE_BUILD_TYPE%
 
 :: 3. Build the project
 cmake --build build --config %CMAKE_BUILD_TYPE%
-
-:: 4. Run your executable
-.\build\Learn-C.exe

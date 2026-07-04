@@ -3,6 +3,12 @@
 
 #include "main.h"
 
+
+typedef struct String_t{
+   const char *data;
+   size_t count; 
+} String_t;
+
 bool isSpace(char c);
 
 int count_char_noSpace(char *s);
@@ -31,6 +37,12 @@ int isAlpha(char c);
 
 uint8_t CharToInt(char c);
 
-uint32_t StringToInt(const char s[]);
+uint32_t StringToInt(const char *s);
+
+String_t initStr(const char *s);
+
+char *chop_right_string(String_t *str);
+char *chop_right_string(String_t *str);
+void chop_left_string(String_t *str);
 
 #endif
