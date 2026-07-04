@@ -12,9 +12,12 @@ CMakeFiles/LinkedList.dir/src/LinkedList.c.obj: \
  C:/msys64/ucrt64/include/corecrt_stdio_config.h \
  C:/msys64/ucrt64/include/_mingw_off_t.h \
  C:/msys64/ucrt64/include/swprintf.inl \
- C:/msys64/ucrt64/include/sec_api/stdio_s.h D:/Learn-C/inc/string.h \
- D:/Learn-C/inc/main.h C:/msys64/ucrt64/include/math.h \
- C:/msys64/ucrt64/include/time.h C:/msys64/ucrt64/include/sys/timeb.h \
+ C:/msys64/ucrt64/include/sec_api/stdio_s.h \
+ C:/msys64/ucrt64/include/string.h \
+ C:/msys64/ucrt64/include/corecrt_memory.h \
+ C:/msys64/ucrt64/include/sec_api/string_s.h \
+ C:/msys64/ucrt64/include/math.h C:/msys64/ucrt64/include/time.h \
+ C:/msys64/ucrt64/include/sys/timeb.h \
  C:/msys64/ucrt64/include/sec_api/sys/timeb_s.h \
  C:/msys64/ucrt64/include/_timeval.h \
  C:/msys64/ucrt64/include/pthread_time.h \

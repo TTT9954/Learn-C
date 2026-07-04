@@ -168,6 +168,19 @@ Stack/fast:
 .PHONY : Stack/fast
 
 #=============================================================================
+# Target rules for targets named StringSelf
+
+# Build rule for target.
+StringSelf: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 StringSelf
+.PHONY : StringSelf
+
+# fast build rule for target.
+StringSelf/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\StringSelf.dir\build.make CMakeFiles/StringSelf.dir/build
+.PHONY : StringSelf/fast
+
+#=============================================================================
 # Target rules for targets named Learn-C
 
 # Build rule for target.
@@ -312,6 +325,33 @@ src/Stack.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Learn-C.dir\build.make CMakeFiles/Learn-C.dir/src/Stack.c.s
 .PHONY : src/Stack.c.s
 
+src/StringSelf.obj: src/StringSelf.c.obj
+.PHONY : src/StringSelf.obj
+
+# target to build an object file
+src/StringSelf.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\StringSelf.dir\build.make CMakeFiles/StringSelf.dir/src/StringSelf.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Learn-C.dir\build.make CMakeFiles/Learn-C.dir/src/StringSelf.c.obj
+.PHONY : src/StringSelf.c.obj
+
+src/StringSelf.i: src/StringSelf.c.i
+.PHONY : src/StringSelf.i
+
+# target to preprocess a source file
+src/StringSelf.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\StringSelf.dir\build.make CMakeFiles/StringSelf.dir/src/StringSelf.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Learn-C.dir\build.make CMakeFiles/Learn-C.dir/src/StringSelf.c.i
+.PHONY : src/StringSelf.c.i
+
+src/StringSelf.s: src/StringSelf.c.s
+.PHONY : src/StringSelf.s
+
+# target to generate assembly for a file
+src/StringSelf.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\StringSelf.dir\build.make CMakeFiles/StringSelf.dir/src/StringSelf.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Learn-C.dir\build.make CMakeFiles/Learn-C.dir/src/StringSelf.c.s
+.PHONY : src/StringSelf.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -325,6 +365,7 @@ help:
 	@echo ... LinkedList
 	@echo ... RingBuffer
 	@echo ... Stack
+	@echo ... StringSelf
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
@@ -340,6 +381,9 @@ help:
 	@echo ... src/Stack.obj
 	@echo ... src/Stack.i
 	@echo ... src/Stack.s
+	@echo ... src/StringSelf.obj
+	@echo ... src/StringSelf.i
+	@echo ... src/StringSelf.s
 .PHONY : help
 
 

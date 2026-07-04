@@ -2,6 +2,7 @@ D:/Learn-C/build/CMakeFiles/LinkedList.dir
 D:/Learn-C/build/CMakeFiles/Common_Func.dir
 D:/Learn-C/build/CMakeFiles/RingBuffer.dir
 D:/Learn-C/build/CMakeFiles/Stack.dir
+D:/Learn-C/build/CMakeFiles/StringSelf.dir
 D:/Learn-C/build/CMakeFiles/Learn-C.dir
 D:/Learn-C/build/CMakeFiles/edit_cache.dir
 D:/Learn-C/build/CMakeFiles/rebuild_cache.dir

@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Learn-C.dir/src/RingBuffer.c.obj.d"
   "CMakeFiles/Learn-C.dir/src/Stack.c.obj"
   "CMakeFiles/Learn-C.dir/src/Stack.c.obj.d"
+  "CMakeFiles/Learn-C.dir/src/StringSelf.c.obj"
+  "CMakeFiles/Learn-C.dir/src/StringSelf.c.obj.d"
   "Learn-C.exe"
   "Learn-C.exe.manifest"
   "Learn-C.pdb"
