@@ -213,11 +213,14 @@ String_t initStr(const char *s)
    };
 }
 
-char *chop_right_string(String_t *str)
+char *chop_right_string(String_t *str, size_t n)
 {
    if (str == NULL || str->count == 0 || str->data == NULL) return NULL;
 
-   str->count -= 1;
+   n = (n > str->count) ? str->count : ((n == 0) ? 0 : n);
+
+   str->count -= n;
+
    char *s_temp = (char *)malloc(sizeof(char)*str->count);
    for(uint8_t i = 0; i < str->count; i++)
    {
@@ -231,11 +234,25 @@ char *chop_right_string(String_t *str)
 }
 
 
-
-void chop_left_string(String_t *str)
+void chop_left_string(String_t *str, size_t n)
 {
    if(str->count == 0) return;
 
-   str->count -= 1;
-   str->data += 1;
+   n = (n > str->count) ? str->count : ((n == 0) ? 0 : n);
+
+   str->count -= n;
+   str->data += n;
+}
+
+void chopSpecChar2SideString(String_t *str, char c)
+{
+   while((*(str->data) == c))
+   {
+      chop_left_string(str, 1);
+   }
+
+   while(((str->data[str->count-1]) == c))
+   {
+      str->data = chop_right_string(str, 1);
+   }
 }

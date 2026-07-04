@@ -40,9 +40,9 @@ uint8_t CharToInt(char c);
 uint32_t StringToInt(const char *s);
 
 String_t initStr(const char *s);
+char *chop_right_string(String_t *str, size_t n);
+void chop_left_string(String_t *str, size_t n);
+void chopSpecChar2SideString(String_t *str, char c);
 
-char *chop_right_string(String_t *str);
-char *chop_right_string(String_t *str);
-void chop_left_string(String_t *str);
 
 #endif
