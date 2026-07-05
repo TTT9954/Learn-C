@@ -256,3 +256,28 @@ void chopSpecChar2SideString(String_t *str, char c)
       str->data = chop_right_string(str, 1);
    }
 }
+
+String_t trimStringByDelimiter(String_t *str, char c)
+{
+   size_t i = 0;
+   while(i++ < str->count && str->data[i] != c);
+
+   if(i < str->count)
+   {
+      chop_left_string(str, i);
+      String_t res = {
+         .data = (str->data)+1,
+         .count = i
+      };
+      chopSpecChar2SideString(&res, ' ');
+      return res;
+   }
+
+   if(i >= str->count)
+   {
+      chop_left_string(str, str->count);
+      return (*str);
+   }
+
+}
+
