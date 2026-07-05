@@ -264,12 +264,11 @@ String_t trimStringByDelimiter(String_t *str, char c)
 
    if(i < str->count)
    {
-      chop_left_string(str, i);
       String_t res = {
-         .data = (str->data)+1,
-         .count = i
+         .data = (str->data),
+         .count = i,
       };
-      chopSpecChar2SideString(&res, ' ');
+      chop_left_string(str, i);
       return res;
    }
 

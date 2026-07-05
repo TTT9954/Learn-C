@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
    printf("|%s|\n", strData.data);
 
    trimStr = trimStringByDelimiter(&trimStr, ',');
-   printf("|%s|", trimStr.data);
+   printf("|%s|\n", trimStr.data);
 
    return 0; 
 }
