@@ -30,17 +30,12 @@ add_library(StringSelf STATIC
     inc/StringSelf.h
 )
 
-add_library(Array STATIC
-    src/Array.c
-    inc/Array.h
-)
 
 target_include_directories(LinkedList PUBLIC inc)
 target_include_directories(Common_Func PUBLIC inc)
 target_include_directories(RingBuffer PUBLIC inc)
 target_include_directories(Stack PUBLIC inc)
 target_include_directories(StringSelf PUBLIC inc)
-target_include_directories(Array PUBLIC inc)
 
 add_executable(Learn-C main.c 
     src/LinkedList.c
@@ -48,7 +43,6 @@ add_executable(Learn-C main.c
     src/RingBuffer.c
     src/Stack.c
     src/StringSelf.c
-    src/Array.c
 )
 
-target_link_libraries(Learn-C PRIVATE LinkedList Common_Func RingBuffer Stack StringSelf Array)
+target_link_libraries(Learn-C PRIVATE LinkedList Common_Func RingBuffer Stack StringSelf)
