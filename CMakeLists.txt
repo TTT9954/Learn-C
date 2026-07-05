@@ -4,7 +4,6 @@ project(Learn-C)
 set(CMAKE_C_STANDARD 99)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 
-
 add_library(LinkedList STATIC
     src/LinkedList.c
     inc/LinkedList.h
@@ -44,5 +43,7 @@ add_executable(Learn-C main.c
     src/Stack.c
     src/StringSelf.c
 )
+
+target_link_libraries(Learn-C PRIVATE m)
 
 target_link_libraries(Learn-C PRIVATE LinkedList Common_Func RingBuffer Stack StringSelf)
