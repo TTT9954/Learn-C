@@ -1,2 +1,0 @@
-C:\msys64\ucrt64\bin\ar.exe qc libStringSelf.a CMakeFiles/StringSelf.dir/src/StringSelf.c.obj
-C:\msys64\ucrt64\bin\ranlib.exe libStringSelf.a
