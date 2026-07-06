@@ -42,7 +42,7 @@ uint32_t StringToInt(const char *s);
 String_t initStr(const char *s);
 char *chop_right_string(String_t *str, size_t n);
 void chop_left_string(String_t *str, size_t n);
-void chopSpecChar2SideString(String_t *str, char c);
+void chop_by_spec_char(String_t *str, char c);
 String_t trimStringByDelimiter(String_t *str, char c);
 
 

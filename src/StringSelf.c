@@ -222,7 +222,7 @@ char *chop_right_string(String_t *str, size_t n)
    str->count -= n;
 
    char *s_temp = (char *)malloc(sizeof(char)*str->count);
-   for(uint8_t i = 0; i < str->count; i++)
+   for(uint16_t i = 0; i < str->count; i++)
    {
       s_temp[i] = *(str->data);
       (str->data)++;
@@ -230,7 +230,6 @@ char *chop_right_string(String_t *str, size_t n)
    s_temp[str->count] = '\0';
    
    return s_temp;
-
 }
 
 
@@ -244,7 +243,7 @@ void chop_left_string(String_t *str, size_t n)
    str->data += n;
 }
 
-void chopSpecChar2SideString(String_t *str, char c)
+void chop_by_spec_char(String_t *str, char c)
 {
    while((*(str->data) == c))
    {
@@ -268,8 +267,8 @@ String_t trimStringByDelimiter(String_t *str, char c)
          .data = (str->data),
          .count = i,
       };
-      chop_left_string(str, i);
-      return res;
+      chop_left_string(str, i+1);
+      return (res);
    }
 
    if(i >= str->count)
